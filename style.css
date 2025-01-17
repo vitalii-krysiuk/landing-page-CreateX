@@ -1,0 +1,112 @@
+nav {
+    background-color: white;
+    display: flex;
+}
+
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding: 0px;
+    list-style-type: none;
+    padding-left: 60px;
+    padding-right: 172px;
+}
+
+.navbar a {
+    color: rgb(66, 69, 81);
+    font-family: "Ubuntu", serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none; 
+    margin: 0;
+    padding-left: 12px;
+    padding-top: 22px;
+    
+}
+
+.communication {
+    color: rgb(66, 69, 81);
+    font-family: "Ubuntu", serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.communication-information {
+    color: rgb(30, 33, 44);
+    font-family: "Ubuntu", serif;
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-right: 36px;
+}
+
+
+.logo {
+    padding-top: 35px;
+    margin: 0;
+    padding-left: 345px;
+}
+
+.phone {
+    padding-bottom: 26px;
+    padding-top: 26px;
+}
+
+.chat {
+    padding-bottom: 26px;
+    padding-top: 26px;
+}
+
+body {
+    background-image: url(homepage-image/homepage_background-image.svg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+
+
+p {
+    color: white;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: white;
+}
+
+button trans {
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1em;
+    transition: background-color 0.3s ease-in-out;
+    background-color: transparent;
+    color: inherit;
+}
+
+button orange {
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: orange;
+    font-size: 1em;
+    transition: background-color 0.3s ease-in-out;
+}
