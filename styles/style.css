@@ -1,0 +1,575 @@
+html,
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-contact img {
+    width: 30px;
+    height: 30px;
+}
+
+.header-contact p {
+    margin: 0;
+}
+
+.communication {
+    color: rgb(66, 69, 81);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.communication-information {
+    color: rgb(30, 33, 44);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.navbar {
+    display: flex;
+    gap: 40px;
+    padding: 0px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.navbar li a {
+    color: rgb(66, 69, 81);
+    font-family: "Ubuntu", serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: rgb(89, 93, 108);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.communication {
+    color: rgb(66, 69, 81);
+    font-family: "Ubuntu", serif;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+.communication-information {
+    color: rgb(30, 33, 44);
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.main-section {
+    background: url('../homepage-image/homepage_background-image.svg');
+    position: relative;
+    color: white;
+    height: 100vh;
+}
+
+.main-section .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: Ubuntu;
+    margin: 0 0 10px;
+}
+
+.main-section p {
+    font-size: 1.2rem;
+    margin: 0 0 20px;
+    font-family: Ubuntu;
+}
+
+.about-us {
+    text-align: center;
+    background: rgb(229, 229, 229);
+    padding: 60px 20px;
+}
+
+.about-content {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.about-content h2 {
+    font-size: 46px;
+    font-weight: 700;
+    font-family: Ubuntu;
+    margin-bottom: 20px;
+    color: rgb(30, 33, 44);
+}
+
+.about-content p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Ubuntu;
+    margin-bottom: 30px;
+    color: rgb(120, 122, 128);
+}
+
+.video-container {
+    margin-bottom: 30px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.icon-item {
+    text-align: center;
+}
+
+.icon-item img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.icon-item p {
+    color: rgb(30, 33, 44);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.our-services {
+    padding: 70px 20px 80px;
+    text-align: center;
+    background-color: rgb(229, 229, 229);
+}
+
+.our-services h2 {
+    margin: 0 0 15px;
+
+    color: rgb(30, 33, 44);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.our-services>p {
+    margin: 0 auto 50px;
+
+    color: rgb(120, 122, 128);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.services-cards {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-card {
+    position: relative;
+    width: 270px;
+    height: 230px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(30, 33, 44, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.services-card p {
+    margin: 0;
+    color: rgb(30, 33, 44);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.services-card:hover {
+    transform: scale(1.05);
+}
+
+.interior-card {
+    background-image: url("../ourservices-image/interior-design-bg.svg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.interior-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(30, 33, 44, 0.65);
+}
+
+.interior-card img,
+.interior-card p {
+    position: relative;
+    z-index: 1;
+}
+
+.interior-card p {
+    color: white;
+}
+
+.services-btn {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.services-btn .button-orange {
+    height: 43px;
+    padding: 0 32px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(255, 90, 48);
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.services-btn .button-orange:hover {
+    background-color: rgb(220, 70, 35);
+}
+
+.contact-form {
+    padding: 45px 40px;
+    background-color: white;
+}
+
+.contact-form h2 {
+    margin: 0 0 28px;
+    text-align: center;
+    color: rgb(30, 33, 44);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.contact-form form {
+    max-width: 810px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    gap: 18px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-field label {
+    color: rgb(66, 69, 81);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 12px;
+}
+
+.form-field input {
+    width: 200px;
+    height: 35px;
+    padding: 0 12px;
+    border: 1px solid rgb(215, 218, 221);
+    border-radius: 4px;
+    background-color: rgb(245, 246, 247);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 12px;
+}
+
+.form-field input::placeholder {
+    color: rgb(154, 156, 165);
+}
+
+.message-field {
+    flex: 1;
+}
+
+.message-field input {
+    width: 100%;
+}
+
+.contact-form button {
+    width: 80px;
+    height: 35px;
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(255, 90, 48);
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: rgb(220, 70, 35);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.button-orange {
+    height: 35px;
+    padding: 0 25px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(255, 90, 48);
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.button-orange:hover {
+    background-color: rgb(220, 70, 35);
+}
+
+.button-trans {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.button-trans:hover {
+    background-color: white;
+    color: rgb(150, 150, 150);
+}
+
+.our-work {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.work-gallery {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.work-item {
+    width: 250px;
+    text-align: center;
+}
+
+.work-item img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.work-item img:hover {
+    transform: scale(1.05);
+}
+
+.our-work h2 {
+    font-size: 46px;
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 20px;
+    color: rgb(30, 33, 44);
+}
+
+.our-work>p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 30px;
+    color: rgb(120, 122, 128);
+}
+
+.work-item p {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(30, 33, 44);
+}
+
+.news {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.news-container {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+}
+
+.news-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.news h2 {
+    font-size: 46px;
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 30px;
+    color: rgb(30, 33, 44);
+}
+
+.news-item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1.4;
+    color: rgb(30, 33, 44);
+}
+
+.news-item p {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1.6;
+    color: rgb(120, 122, 128);
+}
+
+.contact-info {
+    padding: 60px 80px 20px;
+    background-color: rgb(30, 33, 44);
+    color: white;
+}
+
+.contact-info h2 {
+    margin: 0 0 40px;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-block h3 {
+    margin: 0 0 15px;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.contact-block p {
+    margin: 8px 0;
+    font-family: Ubuntu;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(180, 180, 180);
+}
+
+.map {
+    max-width: 300px;
+}
+
+.map iframe {
+    width: 300px;
+    height: 180px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.footer-bottom {
+    max-width: 1100px;
+    margin: 50px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgb(70, 73, 82);
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-family: Ubuntu;
+    font-size: 14px;
+    color: rgb(140, 140, 140);
+}
