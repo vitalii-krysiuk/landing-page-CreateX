@@ -24,7 +24,3 @@ Verwendete Technologien
 
 Bei diesem Projekt habe ich viel mit CSS gearbeitet. Ich habe versucht, die verschiedenen Bereiche der Website passend zum Figma-Design umzusetzen und die Elemente sinnvoll anzuordnen.
 Das Projekt ist schon etwas älter, aber ich wollte es trotzdem auf GitHub hochladen, weil es eines meiner größeren Projekte ist und zeigt, wie ich meine Kenntnisse in HTML und CSS angewendet habe.
-
-Design
-
-Als Grundlage habe ich ein Figma-Design verwendet. Einige Elemente und Inhalte habe ich dabei etwas verändert und meine eigene Version daraus gemacht.
